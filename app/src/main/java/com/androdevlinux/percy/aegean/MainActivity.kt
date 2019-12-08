@@ -216,9 +216,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                         materialProgressBar.visibility = View.INVISIBLE
                         countDownView.visibility = View.VISIBLE
                         txtDepositAmount.text =
-                            getString(R.string.deposit_amount) + "\n" + transactionBean.result!!.amountExpectedFrom.toString()
+                            String.format(getString(R.string.deposit_amount) + "\n" + transactionBean.result!!.amountExpectedFrom.toString())
                         txtDepositAddress.text =
-                            getString(R.string.deposit_address) + "\n" + transactionBean.result!!.payinAddress.toString()
+                            String.format(getString(R.string.deposit_address) + "\n" + transactionBean.result!!.payinAddress.toString())
                         countDownView.start(xmrToOrderStatusResponse.secondsTillTimeout.toLong() * 1000)
                     } else {
                         materialProgressBar.visibility = View.INVISIBLE

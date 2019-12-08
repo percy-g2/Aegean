@@ -13,7 +13,7 @@ android {
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 1
-        versionName "1.0"
+        versionName "alpha-1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -21,6 +21,11 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        android.applicationVariants.all { variant ->
+            variant.outputs.all {
+                outputFileName = "Aegean-${variant.versionName}.apk"
+            }
         }
     }
     externalNativeBuild {
