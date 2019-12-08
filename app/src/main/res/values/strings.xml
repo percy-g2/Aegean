@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aegean</string>
+    <string name="action_settings">Settings</string>
+    <string name="destination_btc_address">Destination BTC Address</string>
+    <string name="btc_amount">BTC Amount</string>
+    <string name="btc_refund_address">BTC Refund Address</string>
+    <string name="submit">SUBMIT</string>
+    <string name="refresh">Refresh</string>
+    <string name="deposit_address">Deposit Address :</string>
+    <string name="deposit_amount">Deposit Amount :</string>
+</resources>

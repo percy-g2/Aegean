@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "620345714346",
+    "firebase_url": "https://aegean-c4637.firebaseio.com",
+    "project_id": "aegean-c4637",
+    "storage_bucket": "aegean-c4637.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620345714346:android:f1e5ed3d2ee83110d312d3",
+        "android_client_info": {
+          "package_name": "com.androdevlinux.percy.aegean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620345714346-bbg72pka5qa8qdtj7m93t2m66e7lqi3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androdevlinux.percy.aegean",
+            "certificate_hash": "47167fcc05af85410393393b75ce42be23f408cd"
+          }
+        },
+        {
+          "client_id": "620345714346-sh29skrmqlasb4j149tlptm0qusilnm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASTNGCPpeEwEwLk_6Ob-Umx2CUEvzxQmM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620345714346-sh29skrmqlasb4j149tlptm0qusilnm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

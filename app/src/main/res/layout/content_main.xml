@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424242"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/destinationBtcAddressInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="291dp"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintBottom_toTopOf="@+id/materialProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtDestinationBtcAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:hint="@string/destination_btc_address"
+            android:inputType="text"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="126dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="44dp"
+        app:backgroundTint="#00C853"
+        app:rippleColor="@android:color/white"
+        style="@style/AppTheme.RoundedCornerMaterialButton"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Button"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btcRefundAddressInputLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/btcAmountInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtBtcAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:hint="@string/btc_amount"
+            android:inputType="number|numberDecimal"
+            android:textColor="@android:color/white"
+            android:textColorHint="#BDBDBD" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/btcRefundAddressInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:textColorHint="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtBtcRefundAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:hint="@string/btc_refund_address"
+            android:inputType="text"
+            android:textColor="@android:color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.androdevlinux.percy.aegean.utils.MaterialProgressBar
+        android:id="@+id/materialProgressBar"
+        android:layout_width="123dp"
+        android:layout_height="122dp"
+        android:layout_marginBottom="223dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationBtcAddressInputLayout" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDepositAddress"
+        android:layout_width="414dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/deposit_address"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialProgressBar"
+        app:layout_constraintVertical_bias="0.191" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtDepositAmount"
+        android:layout_width="414dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/deposit_amount"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialProgressBar"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countDownView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        app:isShowDay="false"
+        app:isShowHour="false"
+        android:visibility="invisible"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDepositAmount"
+        app:suffixGravity="bottom"
+        app:suffixMinute="m"
+        app:suffixMinuteLeftMargin="5dp"
+        app:suffixMinuteRightMargin="10dp"
+        app:suffixSecond="s"
+        app:suffixSecondLeftMargin="5dp"
+        app:suffixTextColor="@android:color/white"
+        app:suffixTextSize="20sp"
+        app:timeTextColor="@android:color/white"
+        app:timeTextSize="60sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
